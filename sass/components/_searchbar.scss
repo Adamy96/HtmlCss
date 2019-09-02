@@ -1,0 +1,77 @@
+.search-bar {
+  padding: 0 16px;
+  display: flex;
+  height: 56px;
+  align-items: center;
+  align-content: space-between;
+
+  & form {
+    flex-grow: 1;
+    position: relative;
+  }
+
+  & button {
+    border: none;
+    outline: none;
+    background-color: $color-red-1;
+    color: white;
+    padding: 9px 12px;
+    font-family: inherit;
+  }
+
+  & .container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+
+    & input {
+      border: none;
+      outline: none;
+      height: 40px;
+      padding-left: 40px;
+      flex-grow: 1;
+      background-color: $color-light-grey-3;
+      font-family: 'Fira mono', 'Poppins';
+      font-size: 14px;
+    }
+
+    & > img {
+      width: 70px;
+      height: 22px;
+      margin: 4px 16px 0 16px;
+    }
+  }
+
+  & form {
+    display: flex;
+    align-items: center; /* to editando aqui */
+
+    & > img { // Magnifing glass
+      width: 15px;
+      height: 15px;
+      left: 15px;
+      position: absolute;
+    }
+  }
+
+  &__login {
+    display: flex;
+    align-items: center;
+    margin-left: 30px;
+    font-weight: 500;
+
+    & a {
+      color: $color-dark-grey;
+      text-decoration: none;
+      padding: 4px 16px;
+      margin-right: -6px;
+      font-size: 14px;
+      margin-left: 5px;
+    }
+
+    &--joinBtn {
+      font-weight: 600;
+      border: 1px solid rgba(79, 79, 79, .6);
+    }
+  }
+}

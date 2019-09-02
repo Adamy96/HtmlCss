@@ -1,0 +1,79 @@
+.intro {
+    position: relative;
+    background-color: $color-light-grey-1;
+    height: 730px;
+  
+    &-shadowBox {
+      position: absolute;
+      height: 10px;
+      background-image: linear-gradient(to bottom, rgba(190,190,190, .3), $color-light-grey-1);
+      left: 50%;
+      width: 100%;
+      transform: translateX(-50%);
+    }
+  
+    &-header {
+      width: 100%;
+      text-align: center;
+      font-size: 80px;
+      position: absolute;
+      top: 170px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    &-article {
+      width: 520px;
+      font-size: 20px;
+      position: absolute;
+      top: 310px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    &-btns {
+        position: absolute;
+        left: 50%;
+        top: 420px;
+        transform: translateX(-50%);
+        width: 540px;
+        display: flex;
+        justify-content: space-between;
+        font-size: 20px;
+
+        & a {
+            padding: 16px 20px;
+            width: 250px;
+            text-decoration: none;
+            text-align: center;
+            font-weight: 700;
+        }
+
+        &--plan {
+            color: white;
+            background-color: $color-red-2;
+            box-shadow: 8px 8px $color-pink;
+        }
+
+        &--join {
+            color: black;
+            background-color: white;
+        }
+    }
+
+    &-news {
+        position: absolute;
+        top: 540px;
+        left: 50%;
+        transform: translateX(-50%);
+        text-align: center;
+        width: 520px;
+
+        & a {
+            color: $color-red-3;
+            font-weight: 600;
+        }
+    }
+  }
+  

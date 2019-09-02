@@ -1,0 +1,15 @@
+.hr {
+  &-1 {
+    border: none;
+    height: 1px;
+    background-color: rgba(160,160,160, .3);
+  }
+
+  &-2 {
+    position: relative;
+    z-index: 1;
+    border: none;
+    height: 1px;
+    background-color: rgba(160,160,160, .4);
+  }
+}

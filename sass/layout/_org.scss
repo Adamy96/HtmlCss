@@ -1,0 +1,91 @@
+.org {
+    height: 1170px;
+
+    &-container {
+        margin: 0 auto;
+        width: 80%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &-hexagonImg {
+        margin: 65px 0;
+        width: 256px;
+        height: 230px;
+    }
+
+    &-header {
+        position: relative;
+        width: 915px;
+
+        &__bgc {
+            width: 100%;
+            height: 75%;
+            background-color: $color-light-yellow-1;
+            transform: skewX(6deg);
+            position: absolute;
+            z-index: 1;
+            top: 4px;
+            left: -10px;
+        }
+
+        &__text {
+            position: relative;
+            font-size: 36px;
+            font-weight: 600;
+            text-align: center;
+            z-index: 2;
+        }
+    }
+
+    &-article {
+        text-align: center;
+        line-height: 24px;
+        margin: 32px 0 140px 0;
+        width: 760px;
+    }
+
+    &-advantages {
+        width: 100%;
+        height: 340px;
+        display: flex;
+        justify-content: space-between;
+
+        &__card {
+            width: 209px;
+            height: 100%;
+            background-color: #fff;
+
+            &--img {
+                height: 32px;
+            }
+
+            &--title {
+                margin: 16px 0 32px 0;
+                font-size: 16px;
+                font-weight: 700;
+                color: $color-red-3;
+            }
+
+            &--text {
+                color: $color-dark-grey-2;
+            }
+        }
+    }
+
+    &-createBtn {
+        margin: 0 auto;
+        background-color: black;
+        font-size: 20px;
+        font-weight: 700;
+        outline: none;
+        text-decoration: none;
+        color: white;
+        width: 380px;
+        padding: 15px 20px;
+        text-align: center;
+        box-shadow: 10px 10px $color-light-grey-4;
+    }
+}
